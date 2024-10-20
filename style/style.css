@@ -1,0 +1,818 @@
+body,html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+}
+h1,h2,h3,h4,h5,p,a {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+@font-face {
+    font-family: 'SportsWorld';
+    src: url('Sports World/SportsWorld.otf') format('opentype');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Хедер */
+
+.min-1540 {
+	max-width: 1540px;
+	margin: 0 auto;	
+}
+.header {
+	padding: 0 15px;
+	height: 165px;
+	background-color: #000;
+	position: relative;
+	margin-bottom: 46px;
+}
+	.header:before {
+		content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+		background-image: url("../photo/rct-19.jpg");
+		opacity: 0.5;
+		background-size: cover;
+		background-position: center;
+		display: inline-block;
+	}
+.main_header {
+	position: relative;
+	z-index: 3;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.logo {
+	display: block;
+}
+.header_upper {
+	display: flex;
+	justify-content: right;
+	column-gap: 37px;
+	margin-bottom: 38px;
+}
+.block_nav {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+}
+.nav_text {
+	font-size: 19px;
+	line-break: 526%;
+	font-weight: 400;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+}
+.block_social {
+	display: flex;
+	column-gap: 8px;
+}
+.loop {
+	margin-left: 5px;
+}
+.block_social a {
+	display: contents;
+}
+.img_soc_block {
+	display: inline-block;
+}
+.header_lower {
+	display: flex;
+	align-items: center;
+	column-gap: 37px;
+}
+.header_lower .block_nav {
+	column-gap: 43px;
+}
+.header_lower * {
+	font-family: "SportsWorld";	
+}
+.nav_text_2 {
+	font-size: 25px;
+	font-weight: 400;
+	color: #f9e100;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn_main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "SportsWorld";	
+	font-size: 25px;
+	font-weight: 400;
+	color: #fff;	
+	transition: all 0.3s ease-in-out;
+	height: 50px;
+}
+
+.btn_type_donate {
+	width: 150px;
+	background-color: #4f66f6;
+}
+	.btn_type_donate:hover {
+		background-color: #0D92F4;
+	}
+
+
+
+/* Основное содержимое */
+
+.main_casino {
+	display: flex;
+	gap: 92px;
+}
+
+/* Слайдер */
+
+.slider-container {
+	overflow: hidden;
+	margin-bottom: 45px;
+}
+.swiper-slide {
+	position: relative;
+	text-align: center;
+}
+.swiper-slide img::first-child {
+   	max-width: 100%;
+	display: inline-block;
+}
+.stop_icon_slider {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+}
+.swiper-container {
+	max-width: 856px;
+	width: 100%;
+	position: relative;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	text-align: end;
+	right: 12px;
+	bottom: 14px;
+	left: unset;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 var(--swiper-pagination-bullet-horizontal-gap,5px);
+}
+.swiper-pagination-bullet {
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	opacity: 1;
+}
+.swiper-pagination-bullet-active {
+	background-color: #000;
+}
+
+
+.main_site {
+	margin-bottom: 93px;
+}
+.block_anticasino .text_section	{
+	padding-bottom: 14px;
+	border-bottom: 7px solid #000;
+}
+.block_anticasino {
+	margin-bottom: 45px;
+}
+.title_section--bordered {
+	border-bottom: 7px solid #000;	
+}
+.title_section {
+	font-family: "SportsWorld";
+	font-size: 34px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 23px;
+}
+.title_section--small {
+	font-size: 25px;
+}
+.title_section--date {
+	font-size: 18px;
+	display: inline-block;
+	margin-bottom: 31px;
+}
+.block_text_casino {
+	display: flex;
+	justify-content: space-between;
+}
+.casino_img {
+	position: relative;
+	top: -50px;
+}
+.block_main_casino {
+	margin-bottom: 39px;
+}
+.block_border {
+	padding-top: 37px;
+	border-top: 3px solid #000;
+}
+.block_main_casino--2 {
+	margin-bottom: 83px;
+}
+.block_main_casino--3 {
+	margin-bottom: 79px;
+}
+.text_section {
+	max-width: 829px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 155%;
+	color: #505050;
+}
+.main_block_casino {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.text_section--short {
+	max-width: 485px;
+}
+
+.btn_type_news {
+	width: 286px;
+	background-color: #F9E100;
+	color: #000;
+
+}
+.btn_hover_main {
+	transition: all .3s ease-in-out;
+}
+	.btn_hover_main:hover {
+		background-color: #fc6749;
+	}
+
+
+.btn_container {
+    display: flex;
+    justify-content: flex-end;
+}
+.block_law {
+	margin-bottom: 60px;
+}
+.form {
+	padding: 40px 46px;
+	color: #fff;
+	background-color: #000;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 44px;
+}
+.form * {
+	position: relative;
+	z-index: 4;
+}
+	.form:before {
+		content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+		background-image: url("../photo/bg_form.jpg");
+		opacity: 0.3;
+		background-size: cover;
+		background-position: center;
+		display: inline-block;
+		z-index: 2;
+	}
+
+.form_title {
+	font-family: "SportsWorld";
+	font-size: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+.form_description {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 155%;
+	color: #fff;
+	margin-bottom: 39px;
+}
+.form_body {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+.form_input {
+	width: -webkit-fill-available;
+	padding: 13px 39px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #8a8a8a;
+	text-transform: uppercase;
+}
+
+	.form_input:focus {
+		outline: none;
+	}
+.form_group-checkbox {
+	margin-bottom: 39px;
+}
+.form_checkbox {
+	width: 17px;
+	height: 17px;
+	margin: 0px;
+}
+.form_label {
+	display: flex;
+	align-items: center;
+	column-gap: 14px;
+	font-size: 17px;
+	font-weight: 400;
+}
+.btn_type_name {
+	width: 100%;
+	background-color: #f9e100;
+	border: none;
+	color: #000;
+	cursor: pointer;
+}
+
+.checkbox-error {
+   color: red; /* Например, можно добавить красную рамку */
+}
+
+.title_section_2 {
+	font-family: "SportsWorld";
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-bottom: 3px solid #000;
+	padding-bottom: 5px;
+	margin-bottom: 7px;
+}
+.sublock_main_r .text_section {
+	margin-bottom: 27px;
+}
+.partnership_info {
+	margin-top: 42px;
+	margin-bottom: 39px;
+}
+.partnership_info_link {
+	color: #4f46f6;
+}
+
+.block_help {
+	margin-bottom: 42px;
+}
+.btn_type_help {
+	width: 175px;
+	background-color: #f9e100;
+	color: #000;
+}
+
+.block_follow .block_social {
+	column-gap: 25px;
+}
+.block_follow img {
+	width: 62px;
+}
+
+
+/* Футер */
+
+.main_footer {
+	padding: 20px 15px;
+	position: relative;
+	z-index: 1;
+	background-color: #000;
+}
+
+.main_footer * {
+	position: relative;
+	z-index: 4;
+}
+	.main_footer:before {
+		content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+		background-image: url("../photo/rct_4.svg");
+		opacity: 0.7;
+		background-size: cover;
+		background-position: center;
+		display: inline-block;
+		z-index: 2;
+	}
+.block_footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.blook_nav_footer {
+	margin: 21px 0px 17px 0px;
+}
+
+/* Страница два */
+
+.promo_banner {
+	padding: 11px 0px;
+	background-color: #F9E100;
+	text-align: center;
+}
+.promo_banner_text {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #000;
+}
+.promo_banner_text-bold {
+	font-weight: 700;
+}
+.promo_banner_text-normal {
+	margin-top: 5px;
+	font-weight: 400;
+	text-transform: unset;
+}
+.header_2 {
+	margin: 0px;
+}
+.promo_banner_2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #F9E100;
+	height: 142px;
+	margin-bottom: 50px;
+}
+.promo_banner_text_2 {
+	font-family: "SportsWorld";
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 71%;
+	text-transform: uppercase;
+}
+.promo_banner_text-italic {
+	text-transform: none;
+	font-style: italic;
+}
+
+.main_product {
+	margin-bottom: 112px;
+}
+.min-1542 {
+	max-width: 1542px;
+	margin: 0 auto;
+}
+.section_product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 58px;
+	row-gap: 64px;
+}
+
+.block_product {
+	max-width: 262px;
+	width: 100%;
+}
+.block_product_img {
+	border: 1px solid #c4c4c4;
+	margin-bottom: 17px;
+}
+.product_img {
+	width: 100%;
+	height: 261px;
+	display: block;
+}
+.product_text {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 100%;
+	text-transform: uppercase;
+	text-align: center;
+}
+.product_text-name {
+	margin-bottom: 20px;
+}
+.product_text-price {
+	display: block;
+	font-weight: 400;
+	line-height: 87%;
+}
+.block_info_product {
+	height: 71px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+
+/* Бургер Меню */
+.burger {
+	display: none;
+	position: relative;
+	z-index: 99999;
+}
+.burger_btn {
+  height: 20px;
+  background-color:transparent;
+  border:none;
+}
+.header .burger_icon {
+	background-color: #fff;
+}
+.header .burger_icon::after  {
+	background-color: #fff;
+}
+.header .burger_icon::before {
+	background-color: #fff;
+}
+.burger_icon {
+	position:relative;
+	display:block;
+  	background-color: #101010;
+	height: 3px;
+	width: 40px
+}
+	.burger_icon::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: -10px;
+		background-color: #101010;
+		height: 3px;
+		width: 40px;
+		transition: all .3s ease-in-out;
+	}
+	.burger_icon::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: -10px;
+		background-color: #101010;
+		height: 3px;
+		width: 40px;
+		transition: all .3s ease-in-out;
+
+	}
+.burger_icon_close .burger_icon {
+	background-color: transparent;
+}
+	.burger_icon_close .burger_icon::after {
+		transform: rotate(-45deg);
+		bottom: -1px;
+		background-color: #101010;
+	}
+	.burger_icon_close .burger_icon::before {
+		transform: rotate(45deg);
+		top: 1px;
+		background-color: #101010;
+	}
+
+
+.nav_mobile .phone_block {
+	display: block;
+	margin-top: 100px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 29px;
+}
+.nav_mobile .nav_text_header {
+	font-weight: 500;
+}
+.body_scroll {
+	overflow: hidden;
+}
+.header .nav_mobile {
+	position: fixed;
+}
+.nav_mobile {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color:  #fff;
+	z-index: 20;
+}
+.nav_mobile_active {
+	display: block;
+}
+.section_form h1 {
+	text-align: center;
+}
+.information {
+	padding: 75px 50px 65px 18px;
+}
+.ul_nav_header {
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+	column-gap: 25px;
+}
+	.logo_close {
+		display: none;
+	}
+
+/* Адаптив */
+
+@media (max-width: 591px) {
+	.burger {
+		display: block;
+		align-self: center;
+	}
+	.header {
+		height: 75px;
+		padding: 0 26px;
+	}
+	.main_header {
+		align-items: flex-start;
+		z-index: 21;
+	}
+	.main_nav_header_none {
+		display: none;
+	}
+	.logo {
+		width: 96px;
+		height: 100px;
+	}
+
+	.main_nav_header_mobile {
+	    display: flex;
+	    flex-direction: column;
+	    gap: 37px;
+	}
+
+	.main_nav_header_mobile .header_upper,
+	.main_nav_header_mobile .header_lower {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    gap: 37px;
+	}
+
+	.main_nav_header_mobile .block_nav {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    gap: 20px;
+	}
+
+	.main_nav_header_mobile .nav_text {
+	    color: #101010;
+	}
+	.header {
+		margin-bottom: 0px;
+	}
+	.main_casino {
+		flex-direction: column;
+		gap: 103px;
+	}
+	.block_stop_img .stop_icon_slider {
+		width: 210px;
+		height: 210px;
+	}
+	.swiper-slide img {
+		height: 226px;
+		width: 100%;
+		object-fit: cover;
+	}
+	.swiper-pagination-bullet-active {
+		background-color: #F9E100;
+	}
+	.slider-container {
+		margin-bottom: 31px;
+	}
+	.title_section {
+		font-size: 32px;
+	}
+	.block_anticasino, .block_main_casino {
+		padding: 0 26px;
+	}
+	.title_section--small {
+		font-size: 25px;
+		max-width: 415px;
+	}
+	.title_section--date {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+	.block_anticasino {
+		margin-bottom: 32px;
+	}
+	.block_text_casino {
+		flex-direction: column-reverse;
+		gap: 26px;
+	}
+	.text_section--short {
+		max-width: 100%;
+	}
+	.casino_img {
+		top: unset;
+	}
+	.block_border {
+		padding-top: 25px;
+	}
+	.block_main_casino--3 .title_section--small {
+		max-width: 100%;
+	}
+	.btn_container {
+		justify-content: center;
+	}
+	.btn_main {
+		width: 350px;
+		height: 70px;
+	}
+	.block_main_casino--3 {
+		margin-bottom: 72px;
+	}
+	.main_right {
+		padding: 0 26px;
+	}
+	.block_law .title_section {
+		font-size: 34px;
+	}
+	.block_law {
+		margin-bottom: 55px;
+	}
+	.form {
+		padding: 30px 40px;
+		margin-bottom: 83px;
+	}
+	.form_title {
+		margin-bottom: 22px;
+	}
+	.btn_type_name {
+		width: 100%;
+		height: 55px;
+	}
+	.form_group-checkbox {
+		margin-bottom: 35px;
+	}
+	.partnership_info {
+		margin-top: 22px;
+		margin-bottom: 83px;
+	}
+	.sublock_main_r .text_section {
+		margin-bottom: 34px;
+	}
+	.block_help {
+		margin-bottom: 83px;
+	}
+	.blook_nav_footer {
+		margin: 36px 0px 24px 0px;
+	}
+	.main_footer .block_nav {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 40px;
+		max-width: 375px;
+	}
+	.main_footer .img_soc_block {
+		width: 55px;
+	}
+	.main_footer .block_social {
+		column-gap: 14px;
+		flex-wrap: wrap;
+	}
+	.promo_banner_text {
+		font-size: 10px;
+	}
+	.promo_banner_2 {
+		height: 115px;
+	}
+	.promo_banner_text_2 {
+		font-size: 30px;
+	}
+	.information .loop {
+		display: none;
+	}
+}
+
+
+
